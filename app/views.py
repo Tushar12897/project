@@ -18,3 +18,6 @@ def save(request):
         reg.save()
         print('Data Save Successfully')
     return render(request,'index.html')
+
+
+
