@@ -15,13 +15,18 @@ def save(request):
         lastname =request.POST.get("lastname")
         # subject = request.POST.get('subject')
         gender = request.POST.get('gender')
+        birthday = request.POST.get('birthday')
+        email = request.POST.get('email')
+        mob = request.POST.get('mob')
 
           
        
-        reg = Person(firstname=firstname, lastname=lastname,gender=gender)
+        reg = Person(firstname=firstname, lastname=lastname,gender=gender,birthday=birthday,email=email,mob=mob)
         reg.save()
         print('Data Save Successfully')
     return render(request,'index.html')
+
+  
 
 
 
