@@ -8,7 +8,8 @@ from django.db import models
 class Person(models.Model):
     firstname = models.CharField(max_length=20)
     lastname = models.CharField(max_length=20)
-    subject = models.CharField(max_length=40)
-    gender = models.CharField(max_length=40,null=True)
+    gender = models.CharField(max_length=40,null=False)
+    subject = models.CharField(max_length=40,null=True,blank=True)
+
 
     
