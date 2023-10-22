@@ -16,7 +16,7 @@ def save(request):
         subject = request.POST.get('subject')
         gender = request.POST.get('gender')
 
-        
+          
        
         reg = Person(firstname=firstname, lastname=lastname,subject=subject,gender=gender)
         reg.save()
