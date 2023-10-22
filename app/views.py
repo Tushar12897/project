@@ -13,8 +13,12 @@ def save(request):
     if request.method == "POST":
         firstname =request.POST.get("firstname")
         lastname =request.POST.get("lastname")
+        subject = request.POST.get('subject')
+        gender = request.POST.get('gender')
+
+        
        
-        reg = Person(firstname=firstname, lastname=lastname)
+        reg = Person(firstname=firstname, lastname=lastname,subject=subject,gender=gender)
         reg.save()
         print('Data Save Successfully')
     return render(request,'index.html')
