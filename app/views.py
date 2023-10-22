@@ -13,7 +13,7 @@ def save(request):
     if request.method == "POST":
         firstname =request.POST.get("firstname")
         lastname =request.POST.get("lastname")
-        # subject = request.POST.get('subject')
+        subject = request.POST.get('subject')
         gender = request.POST.get('gender')
         birthday = request.POST.get('birthday')
         email = request.POST.get('email')
@@ -21,7 +21,7 @@ def save(request):
 
           
        
-        reg = Person(firstname=firstname, lastname=lastname,gender=gender,birthday=birthday,email=email,mob=mob)
+        reg = Person(firstname=firstname, lastname=lastname,subject=subject,gender=gender)
         reg.save()
         print('Data Save Successfully')
     return render(request,'index.html')
