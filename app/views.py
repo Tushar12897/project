@@ -24,7 +24,7 @@ def save(request):
         reg = Person(firstname=firstname, lastname=lastname,subject=subject,gender=gender,birthday=birthday,email=email,mob=mob)
         reg.save()
         print('Data Save Successfully')
-    return render(request,'index.html')
+    return render(request,'index.html') 
 
   
 
