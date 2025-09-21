@@ -1,0 +1,17 @@
+{
+	"name": "DS_FRANCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "DBO",
+			"table": "tblfrance"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

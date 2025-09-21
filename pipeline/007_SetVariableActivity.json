@@ -1,0 +1,58 @@
+{
+	"name": "007_SetVariableActivity",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "x",
+					"value": 300
+				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "y",
+					"value": 400
+				}
+			}
+		],
+		"variables": {
+			"x": {
+				"type": "Integer",
+				"defaultValue": 100
+			},
+			"y": {
+				"type": "Integer",
+				"defaultValue": 100
+			}
+		},
+		"folder": {
+			"name": "All Pipelines"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-09-07T09:30:42Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

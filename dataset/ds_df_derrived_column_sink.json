@@ -1,0 +1,17 @@
+{
+	"name": "ds_df_derrived_column_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblderrivedcolumn"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

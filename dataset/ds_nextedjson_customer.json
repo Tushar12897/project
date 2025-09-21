@@ -1,0 +1,59 @@
+{
+	"name": "ds_nextedjson_customer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ADLSGEN2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customerNexted.json",
+				"folderPath": "input",
+				"fileSystem": "mycontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Customers": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"CustomerID": {
+								"type": "string"
+							},
+							"Details": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"FirstName": {
+											"type": "string"
+										},
+										"LastName": {
+											"type": "string"
+										},
+										"Country": {
+											"type": "string"
+										},
+										"State": {
+											"type": "string"
+										},
+										"Age": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

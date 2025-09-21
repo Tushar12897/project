@@ -1,0 +1,55 @@
+{
+	"name": "008_GetCurrentTimeVaariable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "currentTime",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "curremtTime1HourBack",
+					"value": {
+						"value": "@subtractFromTime(utcNow(),1,'Hour')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"currentTime": {
+				"type": "String"
+			},
+			"curremtTime1HourBack": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "All Pipelines"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-09-07T09:30:42Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

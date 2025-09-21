@@ -1,0 +1,17 @@
+{
+	"name": "ds_rank",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblrank_denserank"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

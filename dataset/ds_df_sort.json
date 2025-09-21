@@ -1,0 +1,17 @@
+{
+	"name": "ds_df_sort",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblsort"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

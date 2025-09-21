@@ -1,0 +1,50 @@
+{
+	"name": "Ds_input_header_less_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ADLSGEN2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customer_071325.csv.csv",
+				"folderPath": "input",
+				"fileSystem": "mycontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "1",
+				"type": "String"
+			},
+			{
+				"name": "James",
+				"type": "String"
+			},
+			{
+				"name": "Smith",
+				"type": "String"
+			},
+			{
+				"name": "USA",
+				"type": "String"
+			},
+			{
+				"name": "CA",
+				"type": "String"
+			},
+			{
+				"name": "25",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

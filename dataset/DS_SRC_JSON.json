@@ -1,0 +1,43 @@
+{
+	"name": "DS_SRC_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ADLSGEN2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customer.json",
+				"folderPath": "input",
+				"fileSystem": "mycontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CustomerID": {
+					"type": "string"
+				},
+				"FirstName": {
+					"type": "string"
+				},
+				"LastName": {
+					"type": "string"
+				},
+				"Country": {
+					"type": "string"
+				},
+				"State": {
+					"type": "string"
+				},
+				"Age": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "ds_surrogatekey",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblsurrogateKey"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

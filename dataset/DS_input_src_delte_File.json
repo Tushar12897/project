@@ -1,0 +1,20 @@
+{
+	"name": "DS_input_src_delte_File",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ADLSGEN2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employees",
+				"folderPath": "input",
+				"fileSystem": "mycontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

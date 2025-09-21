@@ -1,0 +1,9 @@
+{
+	"name": "tushdatafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1bdfef54-7a7d-4aee-963c-2d852748b366",
+		"tenantId": "89b91bc7-c8f5-4571-89a3-c77f7688441c"
+	}
+}

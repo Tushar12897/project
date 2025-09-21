@@ -1,0 +1,17 @@
+{
+	"name": "DS_UNION",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AZURESQLDATABASE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "DBO",
+			"table": "TBLUNION"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
