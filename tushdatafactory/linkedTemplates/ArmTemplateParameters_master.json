@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "tushdatafactory"
+		},
+		"AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"ls_ADLSGEN2_accountKey": {
+			"value": ""
+		},
+		"ls_AZURESQLDATABASE_password": {
+			"value": ""
+		},
+		"ls_localfile_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "tushazuresqlserver.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "tushazuresqldatabase"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "Tushar"
+		},
+		"ls_ADLSGEN2_properties_typeProperties_url": {
+			"value": "https://tushadlsgen2.dfs.core.windows.net/"
+		},
+		"ls_AZURESQLDATABASE_properties_typeProperties_server": {
+			"value": "tushazuresqlserver.database.windows.net"
+		},
+		"ls_AZURESQLDATABASE_properties_typeProperties_database": {
+			"value": "tushazuresqldatabase"
+		},
+		"ls_AZURESQLDATABASE_properties_typeProperties_userName": {
+			"value": "Tushar"
+		},
+		"ls_kv_properties_typeProperties_baseUrl": {
+			"value": "https://kv-tush-dev.vault.azure.net/"
+		},
+		"ls_localfile_properties_typeProperties_host": {
+			"value": "F:\\Study Material\\Data engeenier course\\Sample files"
+		},
+		"ls_localfile_properties_typeProperties_userId": {
+			"value": "DESKTOP-NI0MJDR"
+		},
+		"002_EventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/fbe0d1a7-fc6a-42a9-a989-f74774f55fa0/resourceGroups/tushresource/providers/Microsoft.Storage/storageAccounts/tushadlsgen2"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
